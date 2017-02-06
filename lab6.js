@@ -1,0 +1,13 @@
+function convertTemp(temp, unit) {
+  if (unit === "C") {
+    return (5/9) * (temp-32);
+  }
+  else if (unit === "F") {
+    return (temp * 9/5) + 32;
+  }
+}
+console.log(convertTemp (212, "C"));
+console.log(convertTemp (32, "C"));
+console.log(convertTemp (65, "C"));
+console.log(convertTemp (100, "F"));
+console.log(convertTemp (-40, "F"));
